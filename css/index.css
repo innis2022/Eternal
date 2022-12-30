@@ -55,7 +55,7 @@ a { color:inherit; text-decoration:none;}
 
 /* 사이드 시작 */
 .slide_cover {
-	/* height:760px; */
+	height:760px;
 	/* border:1px solid red; */
 }
 .slid {
