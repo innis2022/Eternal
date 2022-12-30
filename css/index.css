@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+*{ 
+	margin:0 auto; padding: 0; color:#333;
+	font-family: 'Playfair Display', 'Nanum Gothic';
+}
+body, html { 
+	background-color:rgb(246, 242, 233);
+}
+#layout {max-width: 1920px; margin: auto;}
+ul>li {list-style:none; }
+a { color:inherit; text-decoration:none;}
+
+
+
+/* header 시작 */
+#first {
+	width:1900px; height:80px;
+	display: flex; 
+}
+#first>h1 {
+	padding:14px 0 0 40px; 
+}
+#menu {
+	display: flex; padding-top:31px;
+}
+#menu>li {
+	padding: 0 40px; text-transform:capitalize;
+}
+#menu a {font-size:18px;}
+
+/* 메뉴 공통호버 */
+#first a:hover {
+	color:#D2B48C;
+}
+
+
+
+/* 로그인 */
+#login{
+	padding-top:33px;
+	font-size:20px; font-weight:normal;
+}
+#first li {
+	margin-left:20px; float:left;
+	font-weight:normal; font-size:17px;
+}
+#first li:nth-child(1) {
+	margin:0;
+}
+#first a:hover>.fas {
+	color:#D2B48C;
+}
+
+
+/* 사이드 시작 */
+.slide_cover {
+	/* height:760px; */
+	/* border:1px solid red; */
+}
+.slid {
+	width:100%; 
+	background: url(../img/main.png) no-repeat center center;	
+}
+
+.slid>h2 {
+	color:#6f4320;
+	font-size:100px; line-height: 90%;
+	margin-left:140px; padding-top:100px;
+}
+.slid>p:nth-child(2) {
+	color:#6f4320; font-size:25px;
+	margin-left:160px; padding-top:40px;
+}
+.slid>p:nth-child(3) {
+	color:#6f4320;
+	font-size:25px; font-family:"HCR Dotum";
+	margin-left:160px; padding-top:20px;
+}
+
+
+/* banner 시작 */
+#banner_cover {
+	background-color:#e1c8b2;
+	max-height:1370px; margin: 0;
+	padding-bottom: 50px;
+}
+#banner {
+	max-width:1600px; 
+	margin: auto; margin-bottom: 0; padding: 30px 0;
+}
+#banner>h2 {
+	padding:30px 0 10px 0; text-align:center;
+	font-size:55px; font-weight:normal;
+	color:#533f2c; line-height:100px;
+}
+#banner ul {display: flex;}
+#banner li {
+	width:360px; margin-right:53px;
+	float:left; text-align:center;
+	box-sizing:border-box; flex: 1;
+}
+#banner li:last-child {
+	margin-right:0;
+}
+#banner li a {
+	display: block;
+}
+#banner li>a p {
+	width:360px; height:523px;
+}
+.type1 p {
+	background: url(../img/perfume1.png) no-repeat center top;
+}
+.type1 p:hover {
+	background: url(../img/perfume1_hover.png) no-repeat center top;
+	transition:background 0.5s;
+}
+.type2 p {
+	background: url(../img/perfume2.png) no-repeat center top;
+}
+.type2 p:hover {
+	background: url(../imgimg/perfume2_hover.png) no-repeat center top;
+	transition:background 0.5s;
+}
+.type3 p {
+	background: url(../img/perfume3.png) no-repeat center top;
+}
+.type3 p:hover {
+	background: url(../img/perfume3_hover.png) no-repeat center top; 
+	transition:background 0.5s;
+}
+.type4 p {
+	background: url(../img/perfume4.png) no-repeat center top;
+}
+.type4 p:hover {
+	background: url(../img/perfume4_hover.png) no-repeat center top;
+	transition:background 0.5s;
+}
+.banner li h4 {
+	color:#533f2c; font-size:25px;
+	padding-top:12px;
+}
+.banner span {
+	color:#533f2c; padding-bottom:12px;
+	text-align:center; font-size:20px;
+}
+
+
+#bottom_cover  {
+	width: 100%; height: 1370px;
+}
+
+/* Description */
+#Description {
+	text-align:center; color:#e9dbc8;
+	padding-top: 50px;
+	width:100%; height:400px;
+	background: url(../img/background.png) no-repeat ;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#Description>h2 {
+	font-size: 60px; color:white;
+
+}
+#Description>span {
+	font-size: 30px; color:white;
+}
+#Description>p {
+	font-size: 20px; color:white;
+	margin-top: 30px; line-height: 150%;
+}
+#Description button {
+	margin-top: 40px;  background: none;
+	border: 2px solid white; border-radius: 13px;
+}
+#Description a {
+	display: block; padding: 10px 40px 15px 40px;
+	color: white; font-size: 1rem;
+}
+#Description a:hover {
+	background-color: white; color: #6f4320;
+	border-radius: 10px; font-weight: 700;
+}
+
+
+/* brand */
+#brand {
+	position:relative;
+	background-color: rgba(255, 255, 255, 0.8); margin-top: 20px;
+}
+
+
+/* brand_img */
+.brand_img {position:absolute; left:10%;}
+.brand_img>p:nth-child(1) {
+	position:absolute; top:37px; z-index:1; 
+	width:800px; height:798px; 
+}
+.brand_img>p:nth-child(1) {
+	background:  url(../img/brand1.png) no-repeat center top;
+	animation:move 7s infinite;
+}
+@keyframes move {
+	0% { background:url(../img/brand1.png); width:800px; height:798px; }
+	35% { background:url(../img/brand1_2.png); width:800px; height:798px; }
+	75% { background:url(../img/brand1_3.png); width:800px; height:798px; }
+	100% { background:url(../img/brand1.png); width:800px; height:798px; }
+}
+.brand_img>p:nth-child(2) {
+	width:790px; height:700px; 
+	border:10px solid #e1c8b2; 
+	position:absolute; left:38px; z-index:-1; 
+}
+.brand_img>p:nth-child(3) {
+	position:absolute; left:722px; top:405px; 
+	z-index:2; width:520px; height:400px; 
+}
+.brand_img>p:nth-child(3) {
+	background: url(../img/brand2.png) no-repeat center top;
+	animation:move2 8s infinite;
+}
+@keyframes move2 {
+	0% { background:url(../img/brand2.png); width:520px; height:400px; }
+	50% { background:url(../img/brand2_2.png); width:520px; height:400px; }
+	100% { background:url(../img/brand2.png); width:520px; height:400px; }
+}
+
+
+/* brand_font */
+.brand_font {
+	position:absolute; right:7%;
+	text-align:right; margin-top:19px;
+}
+.brand_font>h2 {
+	font-size:45px;  
+	background:#9a704a; color:white; 
+	padding:15px 39px 10px; margin:0 0 50px 100px;
+	border: 1px solid red;
+}
+.brand_font>p {
+	font-size:22px; line-height: 140%;
+	margin-top:25px; padding-right:39px;
+	color:#9a704a;
+}
+
+
+/* footer 시작 */
+footer {
+	width:100%; height:200px;
+	background:#d3c6b4; margin-top: 0px;
+	box-sizing:border-box;
+}
+.footer_cover {
+	width:1600px; height:200px; position: relative;
+}
+.footer_cover ul {
+	width:1600px; font-style:normal;
+}
+.footer_cover li {
+	width:316px; float:left;
+	text-align:left; line-height:24px;
+	margin-right:322px; padding-top:27px;
+	color:#333;
+}
+.footer_cover li:last-child {
+	margin-right:0px;
+}
+.footer_cover li>span {
+	font-weight:bold; font-size:20px;
+	padding-bottom:20px;
+}
+.footer_cover p {
+	padding-top:44px; font-size:15px;
+	position: absolute; bottom: 30px;
+}
+.footer_cover p:nth-child(1) {
+	left: 0;
+}
+.footer_cover p:nth-child(2) {
+	right: 0;
+}
+
+
+
+
